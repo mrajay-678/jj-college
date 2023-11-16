@@ -2,23 +2,16 @@
   font-family: "masifa";
   src: url(./assest/MasifaUltraCn-Regular.woff);
 }
-@font-face {
-  font-family: "masifa-bold";
-  src: url(./assest/MasifaUltraCn-Bold.woff);
-}
-@font-face {
-  font-family: "masifa-extra-bold";
-  src: url(./assest/MasifaUltraCn-ExtraBold.woff);
-}
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap');
 body {
   min-width: 100vw;
   max-width: 100vw;
   margin: 0 auto;
   padding: 0;
-  font-family: "masifa" !important;
+  font-family: 'PT Sans Narrow', sans-serif !important;
   position: relative;
   overflow-x: hidden;
-  letter-spacing: 1px;
+  color: #333333;
 }
 body::-webkit-scrollbar {
   width: 5px;
@@ -36,9 +29,16 @@ body::-webkit-scrollbar-thumb,
 .section-padding
 {
   padding-top: 80px;
+
+  svg
+  {
+    color: #cf1184;
+    font-size: 50;
+  }
 }
 h1,h2,h3,h4 {
-  font-family: "masifa-extra-bold";
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-weight: 700 !important;
 }
 h1,h2{
   &::after
@@ -60,6 +60,18 @@ h1,h2{
   top: 0;
   display: flex;
   justify-content: space-between;
+
+  .btn {
+    padding: 8px 24px;
+    color: #440969;
+    background-color: #fff;
+    margin-right: 12px;
+    font-weight: 700;
+  }
+  span {
+    font-family: "masifa";
+    margin-left: 160px;
+  }
 }
 .navbar img {
   width: 75px;
@@ -128,12 +140,21 @@ aside {
 // tour-section
 /* Banner  */
 .heading-sec {
-  margin-top: -2px;
+  // margin-top: -2px;
+
+  .position-absolute
+  {
+    top: 10%;
+    z-index: 9;
+    color: white;
+    left: 10%;
+    font-size: 60px;
+  }
 }
 .heading-sec video,
 .heading-sec img {
   width: 100%;
-  height: 85vh;
+  height: 90vh;
 }
 .heading-sec img {
   position: absolute;
@@ -244,3 +265,11 @@ iframe
   overflow: hidden;
 }
 // modal
+
+footer
+{
+  margin-top: 80px;
+  background-color: #333333;
+  color: white ;
+  padding: 24px 36px;
+}

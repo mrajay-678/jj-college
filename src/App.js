@@ -3,7 +3,8 @@ import Banner from './component/Banner';
 import Header from './component/Header';
 import Contact from './component/Contact';
 import Slider from './component/Slider';
-import Course from './component/Course';
+import Course from './component/Course'; 
+import Footer from './component/Footer'; 
 import VideoModal from './component/VideoModal';
 import WhyChooseUs from './component/WhyChooseUs';
 import { FaHeadphonesAlt } from "react-icons/fa";
@@ -23,7 +24,7 @@ function App() {
     <div className="App">
         <Header/>
         <Banner/>
-        <section className='section-padding px-5 d-flex justify-content-around'>
+        <section className='section-padding px-5 gap-5 d-flex justify-content-around'>
           <div className=''>
             <FaHeadphonesAlt className='mb-3 h1'/>
             <h4>Fast support</h4>
@@ -56,7 +57,7 @@ function App() {
           </div>
         </section>
         <VideoModal isOpen={isModalOpen} onClose={closeModal} videoUrl={videoUrl} />
-        <Course/>
+        {/* <Course/> */}
         <section className='section-padding text-white row align-items-center'>
           <div className='col-md-4 h-100 p-5' style={{backgroundColor: "#440969"}}>
               <h1>AJAY</h1>
@@ -75,6 +76,7 @@ function App() {
         <WhyChooseUs/>
         <Slider/>
         <Contact/>
+        <Footer/>
     </div>
   );
 }

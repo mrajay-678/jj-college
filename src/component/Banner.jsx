@@ -8,6 +8,7 @@ const Banner = () => {
       <div className="heading-sec">
         <video autoPlay playsInline loop src={BannerVideo}> </video>
         <img src={BannerImg} alt="Banner"/>
+        <div className='position-absolute fw-bold'>Three Schools <br /> One World</div>
     </div>
     </>
   )
